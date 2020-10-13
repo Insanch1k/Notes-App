@@ -1,6 +1,7 @@
 from django.contrib import admin
-from .models import Note
-from simple_history.admin import SimpleHistoryAdmin
+from .models import Note, Changes
+
 
 # Register your models here.
-admin.site.register(Note, SimpleHistoryAdmin)
+admin.site.register(Note)
+admin.site.register(Changes)
