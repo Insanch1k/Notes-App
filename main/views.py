@@ -1,6 +1,6 @@
-from main.models import Note, Changes
+from .models import Note, Changes
 from rest_framework.generics import ListAPIView, RetrieveAPIView
-from main.serializers import NotesSerializer, ChangesSerializer
+from .serializers import NotesSerializer, ChangesSerializer
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from rest_framework import status
@@ -78,13 +78,6 @@ def notes_delete(request, pk):
 
 
 '''Function for getting history of changes'''
-
-'''@api_view(['GET'])
-def get_changes(request, note_id):
-    note = Note.objects.get(id=note_id)
-    history_of_note = note.history.all()
-    serializer = NotesSerializer(history_of_note, many=True)
-    return Response(serializer.data)'''
 
 
 @api_view(['GET'])

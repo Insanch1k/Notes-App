@@ -1,6 +1,5 @@
 from django.db import models
 from django.utils import timezone
-from simple_history.models import HistoricalRecords
 
 '''Create a model for Notes'''
 

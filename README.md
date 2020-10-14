@@ -31,7 +31,8 @@ Next:
  
  ```python manage.py runserver```
  
- ##Examples:
+##Examples:
+
  Get all notes:
  
  ```
